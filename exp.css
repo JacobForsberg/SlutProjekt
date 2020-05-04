@@ -1,0 +1,250 @@
+/*Slut test 2*/
+
+/*Sätter margin och padding på 0 som standard*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /*bakgrundsfärgen*/
+    background-color: #30475e;
+    width: 100%;
+    height:100px;
+}
+
+.nav-area{
+    /*Positionerar navigeringsmenyn till höger*/
+    float: right;
+    /*tar bort styling från listan*/
+    list-style: none;
+    /*skapar 30px mellanrum från toppen*/
+    margin-top: 30px;
+}
+
+.nav-area li {
+    /*Visar listan bredvid varandra*/
+    display: inline-block;
+}
+
+.nav-area li a {
+    /*ändrar färg på listan*/
+    color: #fff;
+    /*tar bort understrukningen*/
+    text-decoration: none;
+    /*skapar mellanrum*/
+    padding: 5px 20px;
+    /*ändrar font*/
+    font-family: poppins;
+    /*ändrar storlek på text*/
+    font-size: 14px;
+    font-family: 'Righteous', cursive;
+}
+
+/*skapar en hovering animation när man håller över ett element i listan*/
+.nav-area li a:hover{
+    background: #fff;
+    color: #333;
+}
+
+/*ändrar form*/
+.form{
+    margin: 20px;
+    font-size: 25px;
+    color: #f2a365;
+    font-family: 'Righteous', cursive;
+}
+
+/*sätter allt man använder sig av på sidan i en wrapper på vänster sida och positionerar den*/
+.exp-wrapper {
+    float:left;
+    margin-top: 200px;
+    margin-left:20px;
+
+}
+
+/*ändringar för explination list*/
+.exp-list{
+    font-size: 35px;;
+    list-style: none;
+    text-decoration: none;
+}
+/*ändringar för länk elementet i listan*/
+.exp-list li a{
+    text-decoration: none;
+    color: #f2a365;
+    font-family: 'Righteous', cursive;
+}
+/*lokal meny*/
+.local{
+    /*tar bort styling från listan*/
+    list-style: none;
+    /*skapar 30px mellanrum från toppen*/
+    margin-top: 30px;
+}
+
+.local li {
+    /*Visar listan bredvid varandra*/
+    display: inline-block;
+}
+
+.local li a {
+    /*ändrar färg på listan*/
+    color: #f2a365;
+    /*tar bort understrukningen*/
+    text-decoration: none;
+    /*skapar mellanrum*/
+    padding: 5px 20px;
+    /*ändrar font*/
+    font-family: poppins;
+    /*ändrar storlek på text*/
+    font-size: 20px;
+    font-family: 'Righteous', cursive;
+}
+
+/*skapar en hovering animation när man håller över ett element i listan*/
+.local a:hover{
+    background: #fff;
+    color: #333;
+}
+
+
+/* Dropdown knapp */
+.dropbtn {
+    background-color: #f2a365;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    margin-top: 25px;
+    border-radius: 15px;
+  }
+  
+  /* contatiner för att positionera */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* det som finns i drop menyn (som är gömda i vanliga fall) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-family: 'Righteous', cursive;
+    border-radius: 15px;
+  }
+  
+  /* länkar i drop menyn */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Righteous', cursive;
+  }
+  
+  /* ändrar färgen på länken när man hoverar */
+  .dropdown-content a:hover {background-color: #f2a365;}
+  
+  /* visar menyn när man håller över den */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* ändrar hover färgen */
+  .dropdown:hover .dropbtn {background-color: #f2a365;}
+
+
+
+
+/*ändrar färg på rubriken över svårighetsgradsvalet*/
+.video-rubrik{
+    color: #f2a365;
+    font-size: 50px;
+    font-family: 'Righteous', cursive;
+}
+/*ändrar knappen för videon*/
+.videoknapp{
+    color: #f2a365;
+    width:100px;
+    height: 25px;
+    font-size: 20px;
+    background-color: #222831;
+    border: 1px solid #f2a365;
+    font-family: 'Righteous', cursive;
+}
+/*lägger till en hovering animering när man håller över videoknapp elementet*/
+.videoknapp:hover{
+    background: #fff;
+    color: #333;
+}
+/*ändrar knappen för ljudet*/
+.ljudknapp{
+    color: #f2a365;
+    width:100px;
+    height: 25px;
+    font-size: 20px;
+    background-color: #222831;
+    border: 1px solid #f2a365;
+    font-family: 'Righteous', cursive;
+}
+/*lägger till en hovering animering när man håller över ljudknapp elementet*/
+.ljudknapp:hover{
+    background: #fff;
+    color: #333;
+}
+/*positionerar videon*/
+.videos{
+    position: absolute;
+    text-align: center;
+    margin: 15% 45%;
+    display:none;
+}
+
+/*positionerar ljudet*/
+.ljud{
+    position: absolute;
+    text-align: center;
+    margin: 20% 25%;
+    display:none;
+}
+
+/*ändrar formuläret*/
+.form-write{
+position:absolute;
+margin: 20% 45%;
+font-size: 25px;
+color: #f2a365;
+}
+
+/*ordered list*/
+.ord{
+    position:absolute;
+    margin: 20% 25%;
+    color: #f2a365;
+    font-size: 50px;
+    font-family: 'Righteous', cursive;
+}
+
+/*min tabell*/
+.tabell {
+    position:absolute;
+    margin: 20% 55%;
+    color: #f2a365;
+    font-size: 50px;
+    border: 1px solid #f2a365; 
+    border-radius: 25px;
+    font-family: 'Righteous', cursive;
+}
+
+
+/*mina bilder*/
+.bilder {
+    position: absolute;
+    text-align: center;
+    margin: 5px 45%;
+    /*display none är för att de ska vara gömda tills man klickar på knappen i drop down menyn*/
+    display:none;
+}

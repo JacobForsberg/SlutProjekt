@@ -1,0 +1,89 @@
+/*Slut test 2*/
+
+/*Sätter margin och padding på 0 som standard*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /*bakgrundsfärgen*/
+    background: #491b1e;
+}
+
+/*Gör att wrapper är 100% av skärmen*/
+.wrapper {
+    width: 100%;
+}
+
+.nav-area{
+    /*Positionerar navigeringsmenyn till höger*/
+    float: right;
+    /*tar bort styling från listan*/
+    list-style: none;
+    /*skapar 30px mellanrum från toppen*/
+    margin-top: 30px;
+}
+
+.nav-area li {
+    /*Visar listan bredvid varandra*/
+    display: inline-block;
+}
+
+.nav-area li a {
+    /*ändrar färg på listan*/
+    color: #fff;
+    /*tar bort understrukningen*/
+    text-decoration: none;
+    /*skapar mellanrum*/
+    padding: 5px 20px;
+    /*ändrar font*/
+    font-family: poppins;
+    /*ändrar storlek på text*/
+    font-size: 14px;
+}
+
+/*skapar en hovering animation när man håller över ett element i listan*/
+.nav-area li a:hover{
+    background: #fff;
+    color: #333;
+}
+
+/*Sätter welcome text i mitten av skärmen*/
+.welcome-text {
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    margin: 20% 30%;
+    text-align: center;
+}
+
+/*Ändrar själva texten*/
+.welcome-text h1{
+    text-align: center;
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 60px;
+}
+
+/*Ändrar a taggen i welcome text*/
+.welcome-text a {
+    border: 1px solid #fff;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 20px;
+    display: inline-block;
+    color: #fff;
+}
+
+/*Ger a taggen en hover effekt*/
+.welcome-text a:hover {
+    background: #fff;
+    color:#333;
+}
+
+@media only screen and (min-width: 768px) {
+    
+}

@@ -1,0 +1,226 @@
+/*Slut test 2*/
+
+/*Sätter margin och padding på 0 som standard*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /*bakgrundsfärgen*/
+    background-color: #491b1e;
+    width: 100%;
+    height:100px;
+}
+
+.nav-area{
+    /*Positionerar navigeringsmenyn till höger*/
+    float: right;
+    /*tar bort styling från listan*/
+    list-style: none;
+    /*skapar 30px mellanrum från toppen*/
+    margin-top: 30px;
+}
+
+.nav-area li {
+    /*Visar listan bredvid varandra*/
+    display: inline-block;
+}
+
+.nav-area li a {
+    /*ändrar färg på listan*/
+    color: #fff;
+    /*tar bort understrukningen*/
+    text-decoration: none;
+    /*skapar mellanrum*/
+    padding: 5px 20px;
+    /*ändrar font*/
+    font-family: poppins;
+    /*ändrar storlek på text*/
+    font-size: 14px;
+    font-family: 'Righteous', cursive;
+}
+
+/*skapar en hovering animation när man håller över ett element i listan*/
+.nav-area li a:hover{
+    background: #fff;
+    color: #333;
+}
+
+/*explanation list*/
+.exp-list {
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    margin: 25% 35%;
+    text-align: center;
+    margin-top: 135px;
+    font-family: 'Righteous', cursive;
+}
+/*explanation list h1 taggen*/
+.exp-list h1{
+    text-align: center;
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+/*explanation list länk formatet*/
+.exp-list a {
+    border: 1px solid #fff;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 20px;
+    display: inline-block;
+    color: #fff;
+    border-radius: 10px;
+}
+/*explanation list hovering effekt*/
+.exp-list a:hover {
+    background: #fff;
+    color:#333;
+}
+
+/*hela min container för alternativ*/
+.container {
+    position: absolute;
+    width: 1000px;
+    height: 400px;
+    margin: 20% 25%;
+}
+/*de individuella boxarna*/
+.container .box {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: #1a1a1a;
+    margin: 15px;
+    color:#f1f1f1;
+    text-align: center;
+    font-size: 10px;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    display: inline-block;
+    font-family: 'Righteous', cursive;
+}
+/*hovering effekt för boxarna*/
+.container .box:hover{
+    background: #fff;
+    color:#333;
+}
+
+/*gör boxen klickbar*/
+.klickbox {
+    display: inline-block;
+    width: 200px;
+    height: 175px;
+}
+/*ett försök av att få in ikoner i boxarna (får se om jag har tid att fixa)*/
+.netpic {
+    width: 150px;
+    height: 150px;
+}
+
+
+@media only screen and (max-width: 300px) {
+    .nav-area{
+        /*Positionerar navigeringsmenyn till höger*/
+        float: left;
+        /*tar bort styling från listan*/
+        list-style: none;
+        /*skapar 30px mellanrum från toppen*/
+        margin-top: 30px;
+    }
+    .nav-area li {
+        /*Visar listan bredvid varandra*/
+        display: block;
+    }
+    
+    .nav-area li a {
+        /*ändrar färg på listan*/
+        color: #fff;
+        /*tar bort understrukningen*/
+        text-decoration: none;
+        /*skapar mellanrum*/
+        padding: 5px 20px;
+        /*ändrar font*/
+        font-family: poppins;
+        /*ändrar storlek på text*/
+        font-size: 5px;
+    }
+/*explanation list*/
+    .exp-list {
+        position: absolute;
+        width: 600px;
+        height: 300px;
+        margin: 45% 80%;
+        text-align: center;
+        margin-top: 135px;
+    }
+/*ändrar container beroende på skärmens storlek*/
+    .container {
+        position: absolute;
+        width: 1000px;
+        height: 400px;
+        margin: 75% 20%;
+        display:block;
+    }
+    .klickbox {
+        display: block;
+        width: 200px;
+        height: 175px;
+    }
+    .container .box {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        background: #1a1a1a;
+        margin: 15px;
+        color:#f1f1f1;
+        text-align: center;
+        font-size: 10px;
+        box-sizing: border-box;
+        border: 1px solid #fff;
+        display: block;
+    }
+
+    .net .smart .tech .progr {
+        font-size: 2px;
+    }
+}
+
+
+@media only screen and (max-width: 450px) {
+    .nav-area{
+        /*Positionerar navigeringsmenyn till höger*/
+        float: left;
+        /*tar bort styling från listan*/
+        list-style: none;
+        /*skapar 30px mellanrum från toppen*/
+        margin-top: 30px;
+    }
+    .nav-area li {
+        /*Visar listan bredvid varandra*/
+        display: block;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .nav-area{
+        /*Positionerar navigeringsmenyn till höger*/
+        float: left;
+        /*tar bort styling från listan*/
+        list-style: none;
+        /*skapar 30px mellanrum från toppen*/
+        margin-top: 30px;
+
+        display:block;
+    }
+}
+
+
+@media only screen and (min-width: 700px) {
+
+}

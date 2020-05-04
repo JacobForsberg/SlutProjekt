@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="sv">
+<meta charset="UTF-8">
+<!--Slut Test 2-->
+<head>
+    <title>Slut test 2</title>
+    <link rel="stylesheet" href="exp.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+      </style>
+</head>
+
+<body>
+<!--Global many-->
+    <ul class="nav-area">
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="networks.html">Networks</a></li>
+        <li><a href="smarthomes.html">Smart Homes</a></li>
+        <li><a href="tech.html">Tech</a></li>
+        <li><a href="programmering.html">Programming</a></li>
+    </ul>
+
+
+    <div class="exp-wrapper">
+<!--mina radioknappar där man kan välja (tanken är att man ska kunna göra iaf) vilken svårighetsgrad man vill ha på videogenomgången-->
+        <em class="video-rubrik">Video skill grade:</em>
+        <form class="form">
+            <input type="radio" id="expert" name="skill-grade" value="expert">
+            <label for="expert">Expert</label><br>
+            <input type="radio" id="basic" name="skill-grade" value="basic">
+            <label for="basic">Basic</label><br>
+            <input type="radio" id="beginner" name="skill-grade" value="beginner">
+            <label for="beginner">Beginner</label><br>
+          </form>
+
+          <!--Ett JS som gör att videon blir synlig när man klickar på knapparna-->
+          <script>
+              function videoFunction() {
+                var x = document.getElementById("videos");
+                 if (x.style.display === "none") {
+                  x.style.display = "block";
+                    } else {
+                 x.style.display = "none";
+                    }
+  }
+                    
+              
+               //Ett JS som gör att ljudet blir synligt när man klickar på knapparna
+                function ljudFunction() {
+                    var x = document.getElementById("ljud");
+                 if (x.style.display === "none") {
+                  x.style.display = "block";
+                    } else {
+                 x.style.display = "none";
+                    }
+                }
+
+                function bild1Function() {
+                    var x = document.getElementById("bild1");
+                 if (x.style.display === "none") {
+                  x.style.display = "block";
+                    } else {
+                 x.style.display = "none";
+                    }
+                }
+
+                function bild2Function() {
+                    var x = document.getElementById("bild2");
+                 if (x.style.display === "none") {
+                  x.style.display = "block";
+                    } else {
+                 x.style.display = "none";
+                    }
+                }
+
+                function bild3Function() {
+                    var x = document.getElementById("bild3");
+                 if (x.style.display === "none") {
+                  x.style.display = "block";
+                    } else {
+                 x.style.display = "none";
+                    }
+                }
+              
+          </script>
+          <!--mina video & ljud knappar-->
+          <button class="videoknapp" onclick="videoFunction()">Videos</button>
+          <button class="ljudknapp" onclick="ljudFunction()">Ljud</button>
+
+          <!--skapar en lokal lista för att ta sig till ett formulär samt lite statistik-->
+      <ul class="local">
+            <li><a href="form.html">Form</a></li>
+            <li><a href="stat.html">Statistics</a></li>
+        </ul>
+
+        <!--dropdown meny för bilder-->
+        <div class="dropdown">
+            <button class="dropbtn">Bilder</button>
+            <div class="dropdown-content">
+              <a onclick ="bild1Function()">Network</a>
+              <a onclick ="bild2Function()">Tech</a>
+              <a onclick ="bild3Function()">Programming</a>
+            </div>
+          </div>
+   <div class="bilder" id="bild1">
+          <img src="network.png" alt="network">
+        </div>
+
+        <div class="bilder" id="bild2">
+            <img src="tech.jpg" alt="tech">
+          </div>
+
+          <div class="bilder" id="bild3">
+            <img src="programming.jpg" alt="programmering">
+          </div>
+
+    </div>
+    <!--videofil tagen från YT-->
+        <div class="videos" id="videos">    
+                <div class="net-vid" id="net-vid-java"><iframe width="560" height="315" src="https://www.youtube.com/embed/cNwEVYkx2Kk" 
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+    
+
+        </div>
+
+        <div class="ljud" id="ljud">
+        <!--min ljudfil (samma som YT videon)-->
+            <audio controls>
+                <source src="net-ljud.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+              </audio>
+
+        </div>
+
+
+
+
+
+</body>
