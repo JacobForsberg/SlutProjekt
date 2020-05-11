@@ -83,7 +83,7 @@ body{
 
 /*Ger a taggen en hover effekt*/
 .welcome-text a:hover {
-    background: #fff;
+    background: 15 15 15;
     color:#333;
 }
 
