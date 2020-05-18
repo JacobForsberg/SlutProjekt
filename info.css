@@ -1,5 +1,4 @@
-
-        /*Slut test 2*/
+/*Slut test 2*/
 
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
@@ -11,8 +10,7 @@
 
 body{
     /*bakgrundsfärgen*/
-    background:#1a1a1a;
-   /*background: #491b1e;*/
+    background: #491b1e;
 }
 
 /*Gör att wrapper är 100% av skärmen*/
@@ -53,21 +51,37 @@ body{
     color: #333;
 }
 
-
-.container {
-    background: #491b1e;
-    margin: 10% 32%;
+/*Sätter welcome text i mitten av skärmen*/
+.welcome-text {
     position: absolute;
-    height: 500px;
-    width: 500px;
-}
-.container h1 {
+    width: 600px;
+    height: 300px;
+    margin: 20% 30%;
     text-align: center;
+}
+
+/*Ändrar själva texten*/
+.welcome-text h1{
+    text-align: center;
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 60px;
+}
+
+/*Ändrar a taggen i welcome text*/
+.welcome-text a {
+    border: 1px solid #fff;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 20px;
+    display: inline-block;
     color: #fff;
 }
 
-.container p {
-    padding: 2px;
-    color: #fff;
-    padding: 20px;
+/*Ger a taggen en hover effekt*/
+.welcome-text a:hover {
+    background: #fff;
+    color:#333;
 }
